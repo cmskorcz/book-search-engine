@@ -40,7 +40,7 @@ function App() {
   return (
     
     // TODO: Insert the Appllo Provider and also the closing tag at the end 
-    
+    <ApolloProvider>
       <Router>
         <>
           <Navbar />
@@ -60,7 +60,7 @@ function App() {
           </Routes>
         </>
       </Router>
-
+    </ApolloProvider>
 
   );
 }
