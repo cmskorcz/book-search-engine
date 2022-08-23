@@ -10,7 +10,9 @@ import {
 // TODO: import useQuery and useMutation from apollo
 import { useQuery } from '@apollo/client';
 // TODO: import the QUERY_ME query from the correct part of the utils folder
+import { QUERY_ME } from '../utils/queries';
 // TODO: import the REMOVE_BOOK mutation from the correct part of the utils folder
+import { REMOVE_BOOK } from '../utils/mutations';
 
 import { removeBookId } from '../utils/localStorage';
 
@@ -19,7 +21,7 @@ import Auth from '../utils/auth';
 const SavedBooks = () => {
 
   // TODO: create a const which pulls destructured loading and data variables from useQuery. useQuery should be supplied with the QUERY_ME query imported above. Line 23 below shows a ROUGH example.
-
+  const { loading, data } = useQuery(QUERY_ME)
 
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
 
