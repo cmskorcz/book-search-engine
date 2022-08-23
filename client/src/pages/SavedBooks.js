@@ -8,6 +8,7 @@ import {
 } from 'react-bootstrap';
 
 // TODO: import useQuery and useMutation from apollo
+import { useQuery } from '@apollo/client';
 // TODO: import the QUERY_ME query from the correct part of the utils folder
 // TODO: import the REMOVE_BOOK mutation from the correct part of the utils folder
 
