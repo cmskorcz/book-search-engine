@@ -51,8 +51,12 @@ const resolvers = {
           Don't forget to then return the same variable you appied to the findByIdAndUpdate query. Again, the removeBook method below shows this.
         */
 
-        // INSERT CODE HERE
-
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $push: { savedBooks: { bookData } } },
+          { new: true }
+        );
+        return updatedUser;
       }
 
       throw new AuthenticationError('You need to be logged in!');
