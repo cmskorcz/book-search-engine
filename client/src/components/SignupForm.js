@@ -11,7 +11,7 @@ const SignupForm = () => {
   /*
     With the useState() hook, create a variable and setter for userFormData. The default should be an object with these properies: username, email, and password. All should be empty strings at first.
   */
-
+  const [ userFormData, setUserFormData ] = useState({ username: '', email: '', password: '' });
 
   // set state for form validation
   const [validated] = useState(false);

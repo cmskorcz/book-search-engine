@@ -47,10 +47,7 @@ const SearchBooks = () => {
    
          The variable name for the request is shown on line 51.
       */
-      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchInput}`, {
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json'}
-      });
+      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${searchInput}`);
       
       if (!response.ok) {
         throw new Error('something went wrong!');
