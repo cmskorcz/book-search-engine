@@ -1,44 +1,27 @@
-# Revised MERN Challenge
+# book-search-engine ![GitHub license](https://img.shields.io/badge/license-Unlicensed-blue)
+![book-seach-engine](/client/public/screenshot.jpeg)
+## Deployed Site
+[book-search-engine](https://afternoon-headland-37737.herokuapp.com/)
+## Description
+MERN application allowing a user to create an account and search for books. A user can then save books that they are intereted in to their account. The application originally used RESTful API, and the purpose of the project was to transition to graphQL. Additional starter code was also provided by class instructor. At this time, a user is unable to save books to their account due to an authorization error. When a user is logged in, an error still occurs on "Save Book" button click stating in the console that a user must be logged in. I believe that this error is due to issues with the router on page changes, and will be further looking into the issue when time allows.
+## Table of Contents
+- Installation
+- Usage
+- License
+- Contributing
+- Tests
+- Questions
+### Installation
+No installation requried
+### Usage
+A user must create an account on the site in order to utilize application
+### License
+Unlicensed
+### Contributing
+No contribution guidelines at this time
+### Tests
+No testing instructions at this time
+### Questions
+GitHub: cmskorcz
 
-I've revised the MERN challenge in the curriculum to make it a little less complex for students at the junior dev level.
-
-Follow the instructions below to make use of this revised version when submitting this assignment.
-
-## Use of this Repo
-
-Clone this repo. Then copy and paste the following folders/files from this repo into the *Develop* folder of the Challenge:
-
-- *server/schemas/*
-- *client/src/App.js*
-- *client/src/pages/SavedBooks.js*
-- *client/src/pages/SearchBooks.js*
-- *client/src/components/LoginForm.js*
-- *client/src/components/SignupForm.js*
-
-Then follow the instructions below to edit these files as needed.
-
-## Your Work
-
-The goal of the challenge is to take an application built with a RESTful API and migrate it to GraphQL.
-
-**Knowing this, let's first work in the *server/* files area.**
-
-- Make sure you update *package.json* with the dependencies needed for GraphQL.
-- You won't need the folders named *routes/* and *controllers/*, as GraphQL doesn't need them.
-- You'll need to update the *server.js* file to properly load up GraphQL. You can find lots of examples of this in our curriculum materials.
-- You'll need a *schemas* folder with the appropriate files inside. In this repo I have created a **starter** version of this folder and the files it contains. Follow the TODO items in each file.
-
-**Now let's work in the *client/* files area.**
-
-- Make sure you update *package.json* with the dependencies needed for GraphQL.
-- You will find TODO items in the following files:
-
-    - *src/App.js*
-    - *src/pages/SavedBooks.js*
-    - *src/pages/SearchBooks.js*
-    - *src/components/LoginForm.js*
-    - *src/components/SignupForm.js*
-
-## Once Complete
-
-Be sure to launch the app locally and test, and then deploy as per the Challenge instructions. Feel free to note in your README that the instructor provided code help on this challenge.
+If you have any questions, you may reach out to me via email at: chaseskorey@gmail.com
